@@ -1,0 +1,78 @@
+.rot-container{
+    display: flex;
+    margin-block-start:3%;
+}
+.rot-section {
+    display: flex;
+  }
+  .rotImg {
+    width: 30vw;
+    margin-top: 10%;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .rotImg #dog {
+    position: absolute;
+    left: -20%;
+    top: 20%;
+  }
+  
+  .rotImg img {
+    width:400px;
+    border: 2px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+
+
+
+
+.sign-in-form {
+    width: 30vw;
+    height: 80vh;
+    background-color: #aaa;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 4%;
+    border-radius: 10px;
+    box-shadow: 13px 11px 0px -3px rgba(96,96,97,0.39);
+  }
+  .sign-in-form .sign-in-content {
+    margin-left: 30px;
+    
+  }
+  .sign-in-form .sign-in-content label {
+    margin: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: start;
+  }
+  .sign-in-form input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    width: 80%;
+    background-color: #dfe5e7;
+    font-size: 1.5em;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    margin:20px;
+    margin-top: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#222;
+    cursor: pointer;
+  }
+  

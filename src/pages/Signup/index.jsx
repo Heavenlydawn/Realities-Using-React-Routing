@@ -6,9 +6,10 @@ import Login from "../Login";
 import Header from "../../components/header";
 
 const Index = () => {
+ 
   return (
     <div className="sign-up-div">
-    <Header />
+      <Header />
       <div className="rot-container">
         <div className="rot-section">
           <div className="rotImg">
@@ -39,18 +40,19 @@ const Index = () => {
               <br />
               <input id="password" type="password" />
 
-              <button className="btn">Sign-Up</button>
-              <a href={Login}><button className="btn-sign">Already registered? Login</button></a>
+              <button className="btn">
+                Sign-Up
+              </button>
+
+              <a href={Login}>
+                <button className="btn-sign">Already registered? Login</button>
+              </a>
             </form>
           </div>
         </div>
       </div>
-
-      
     </div>
   );
-
-  
 };
 
 export default Index;

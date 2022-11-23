@@ -17,7 +17,6 @@ const Index = () => {
       setRandom(item);
     }, 5000);
   }, [quote, randomQuote]);
-
   return (
     <div>
       <Header />

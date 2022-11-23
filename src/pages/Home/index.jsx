@@ -1,11 +1,14 @@
 import React from "react";
-import "./index.css"
+import "./index.css";
 import doggie from "./images/doggie.png";
 import dog from "./images/Dog1.jpg";
+import Header from "../../components/header";
 
 const Index = () => {
   return (
     <div>
+    <Header />
+
       <div className="hero-section">
         <div className="heroImg">
           <img alt="Dog" src={doggie} />

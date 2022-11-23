@@ -5,11 +5,16 @@ import "./index.css";
 import App from "./App";
 import SignUp from "./pages/Signup";
 import Login from "./pages/Login";
+import Home from "./pages/Home"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />
+  },
+  {
+    path:"/home",
+    element:<Home />
   },
   {
     path: "/signup",

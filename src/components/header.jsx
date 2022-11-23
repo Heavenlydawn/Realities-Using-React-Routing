@@ -11,6 +11,9 @@ function Header() {
         <nav className="navBar">
           <ul>
             <li className="btn">
+              <a href="/home">Home</a>
+            </li>
+            <li className="btn">
               <a href="/login">Login</a>
             </li>
             <li className="btn">

@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import doggie from "./images/doggie.png";
-import dog from "./images/Dog1.jpg";
+import doggie from "../../doggie.png";
+import dog from "../../Dog1.jpg";
 import Header from "../../components/header";
 
 const Index = () => {

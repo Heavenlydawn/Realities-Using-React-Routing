@@ -1,20 +1,18 @@
 import React from "react";
 import "./index.css";
-import rot1 from "./images/rot1.jpg";
-import rot2 from "./images/img1.jpg";
+import rot1 from "../../rot1.jpg";
+import rot2 from "../../img1.jpg";
 import Login from "../Login";
 import Header from "../../components/header";
 import { useState } from "react";
 
 const Index = () => {
-
-  
   const [inputs, setInputs] = useState({});
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setInputs((values) => ({...values, [name]: value }));
-    console.log(inputs)
+    setInputs((values) => ({ ...values, [name]: value }));
+    console.log(inputs);
   };
 
   const handleSubmit = (event) => {
@@ -22,10 +20,11 @@ const Index = () => {
     // alert('name:' + inputs.firstname);
     alert(`First-Name: ${inputs.firstname}
      Last-Name: ${inputs.lastname}
-      Email-Address: ${inputs.email}`)
+      Email-Address: ${inputs.email}`);
   };
 
   return (
+    // Header Image Section
     <div className="sign-up-div">
       <Header />
       <div className="rot-container">
@@ -38,57 +37,63 @@ const Index = () => {
           </div>
         </div>
 
+
+{/* Form Section */}
         <div className="sign-in-form">
           <div className="sign-in-content">
             <form>
               <label>First Name</label>
               <br />
               <input
-              name="firstname"
+                name="firstname"
                 onChange={handleChange}
                 value={inputs.firstname || ""}
                 id="fName"
                 type="text"
+                required
               />
               <br />
 
               <label>Last Name</label>
               <br />
               <input
-              name="lastname"
+                name="lastname"
                 onChange={handleChange}
                 value={inputs.lastname || ""}
                 id="lName"
                 type="text"
+                required
               />
 
               <label>Email</label>
               <br />
               <input
-              name="email"
+                name="email"
                 onChange={handleChange}
                 value={inputs.email || ""}
                 id="email"
                 type="email"
+                required
               />
 
               <label>Password</label>
               <br />
               <input
-              name="password"
+                name="password"
                 onChange={handleChange}
                 value={inputs.password || ""}
                 id="password"
                 type="password"
+                required
               />
 
               <button onClick={handleSubmit} type="submit" className="btn">
                 Sign-Up
               </button>
 
-              <a {...Login()}>
-                <button className="btn-sign">Already registered? Login</button>
-              </a>
+              <p className="btn-sign">
+               {Login} Already registered? Login
+              </p>
             </form>
           </div>
         </div>

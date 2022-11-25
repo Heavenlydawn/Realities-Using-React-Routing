@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import "./index.css";
-import dog1 from "./images/rottweiler1.jpg";
-import dog2 from "./images/rottweiler2.jpg";
+import dog1 from "../../rottweiler1.jpg";
+import dog2 from "../../rottweiler2.jpg";
 import SignUp from "../Signup";
 import Header from "../../components/header";
 import Quotes from "../../quotes.json";
@@ -15,7 +15,7 @@ const Index = () => {
       let randomIndex = Math.floor(Math.random() * quote.length);
       let item = quote[randomIndex];
       setRandom(item);
-    }, 5000);
+    }, 2000);
   }, [quote, randomQuote]);
   return (
     <div>
@@ -41,17 +41,18 @@ const Index = () => {
               </div>
               <label>Email:</label>
               <br />
-              <input id="email" type="text" />
+              <input id="email" type="text" required/>
               <br />
               <label>Password:</label>
               <br />
-              <input id="password" type="password" />
+              <input id="password" type="password" required/>
 
               <button className="btn">Login</button>
 
-              <a href={SignUp}>
-                <button className="btn-log">No account? Sign-Up</button>
-              </a>
+              <p className="btn-log">
+              {SignUp}
+               No account? Sign-Up
+              </p>
             </form>
           </div>
         </div>

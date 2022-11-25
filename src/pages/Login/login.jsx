@@ -1,8 +1,8 @@
 import { React, useState, useEffect } from "react";
-import "./index.css";
+import "./login.css";
 import dog1 from "../../rottweiler1.jpg";
 import dog2 from "../../rottweiler2.jpg";
-import SignUp from "../Signup";
+import SignUp from "../Signup/signup";
 import Header from "../../components/header";
 import Quotes from "../../quotes.json";
 
@@ -41,17 +41,17 @@ const Index = () => {
               </div>
               <label>Email:</label>
               <br />
-              <input id="email" type="text" required/>
+              <input id="email" type="text" required />
               <br />
               <label>Password:</label>
               <br />
-              <input id="password" type="password" required/>
+              <input id="password" type="password" required />
 
               <button className="btn">Login</button>
 
               <p className="btn-log">
-              {SignUp}
-               No account? Sign-Up
+                {SignUp}
+                No account? Sign-Up
               </p>
             </form>
           </div>

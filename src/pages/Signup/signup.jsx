@@ -1,8 +1,8 @@
 import React from "react";
-import "./index.css";
+import "./signup.css";
 import rot1 from "../../rot1.jpg";
 import rot2 from "../../img1.jpg";
-import Login from "../Login";
+import Login from "../Login/login";
 import Header from "../../components/header";
 import { useState } from "react";
 
@@ -37,8 +37,7 @@ const Index = () => {
           </div>
         </div>
 
-
-{/* Form Section */}
+        {/* Form Section */}
         <div className="sign-in-form">
           <div className="sign-in-content">
             <form>
@@ -91,9 +90,7 @@ const Index = () => {
                 Sign-Up
               </button>
 
-              <p className="btn-sign">
-               {Login} Already registered? Login
-              </p>
+              <p className="btn-sign">{Login} Already registered? Login</p>
             </form>
           </div>
         </div>

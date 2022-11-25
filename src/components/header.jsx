@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../logo.PNG";
+// import SignUp from "./pages/Signup";
+// import Login from "../pages/Login";
 
 
 function Header() {
@@ -15,6 +17,7 @@ function Header() {
             </li>
             <li className="btn">
               <a href="/login">Login</a>
+             
             </li>
             <li className="btn">
               <a href="/signup">SignUp</a>

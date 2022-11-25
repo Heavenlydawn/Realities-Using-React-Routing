@@ -4,7 +4,7 @@ import doggie from "../../doggie.png";
 import dog from "../../Dog1.jpg";
 import Header from "../../components/header";
 
-const Index = () => {
+const Home = () => {
   return (
     <div>
     <Header />
@@ -29,4 +29,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;

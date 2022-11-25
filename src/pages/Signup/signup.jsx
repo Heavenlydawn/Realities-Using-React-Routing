@@ -6,7 +6,7 @@ import Login from "../Login/login";
 import Header from "../../components/header";
 import { useState } from "react";
 
-const Index = () => {
+const Signup = () => {
   const [inputs, setInputs] = useState({});
   const handleChange = (event) => {
     const name = event.target.name;
@@ -99,4 +99,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Signup;

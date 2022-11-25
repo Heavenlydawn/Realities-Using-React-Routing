@@ -6,7 +6,7 @@ import SignUp from "../Signup/signup";
 import Header from "../../components/header";
 import Quotes from "../../quotes.json";
 
-const Index = () => {
+const Login = () => {
   const [quote, setQuote] = useState(Quotes);
   const [randomQuote, setRandom] = useState({});
 
@@ -61,4 +61,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Login;

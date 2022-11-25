@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "../logo.PNG";
-// import SignUp from "./pages/Signup";
-// import Login from "../pages/Login";
-
+import {NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,19 +11,17 @@ function Header() {
         <nav className="navBar">
           <ul>
             <li className="btn">
-              <a href="/home">Home</a>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li className="btn">
-              <a href="/login">Login</a>
-             
+              <NavLink to="/login">Login</NavLink>
             </li>
             <li className="btn">
-              <a href="/signup">SignUp</a>
+              <NavLink to="/signup">SignUp</NavLink>
             </li>
           </ul>
         </nav>
       </header>
-
     </div>
   );
 }

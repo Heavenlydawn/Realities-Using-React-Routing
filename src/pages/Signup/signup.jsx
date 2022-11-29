@@ -1,11 +1,13 @@
 import React from "react";
 import "./signup.css";
-import rot1 from "../../rot1.jpg";
-import rot2 from "../../img1.jpg";
+import rot1 from "../../images/rot1.jpg";
+import rot2 from "../../images/img1.jpg";
 import Login from "../Login/login";
 import Header from "../../components/header";
 import { useState } from "react";
 
+
+// storing input values
 const Signup = () => {
   const [inputs, setInputs] = useState({});
   const handleChange = (event) => {
@@ -15,9 +17,9 @@ const Signup = () => {
     console.log(inputs);
   };
 
+  // Handling the submit button
   const handleSubmit = (event) => {
     event.preventDefault();
-    // alert('name:' + inputs.firstname);
     alert(`First-Name: ${inputs.firstname}
      Last-Name: ${inputs.lastname}
       Email-Address: ${inputs.email}`);
@@ -86,6 +88,7 @@ const Signup = () => {
                 required
               />
 
+{/* Button section handling the onClick funcion */}
               <button onClick={handleSubmit} type="submit" className="btn">
                 Sign-Up
               </button>

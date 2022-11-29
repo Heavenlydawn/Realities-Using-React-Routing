@@ -1,12 +1,13 @@
 import React from "react";
 import "./home.css";
-import doggie from "../../doggie.png";
-import dog from "../../Dog1.jpg";
+import doggie from "../../images/doggie.png";
+import dog from "../../images/Dog1.jpg"
 import Header from "../../components/header";
 
 const Home = () => {
   return (
     <div>
+    {/* Header Section */}
     <Header />
 
       <div className="hero-section">

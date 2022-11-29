@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import "./login.css";
-import dog1 from "../../rottweiler1.jpg";
-import dog2 from "../../rottweiler2.jpg";
+import dog1 from "../../images/rottweiler1.jpg";
+import dog2 from "../../images/rottweiler2.jpg";
 import SignUp from "../Signup/signup";
 import Header from "../../components/header";
 import Quotes from "../../quotes.json";

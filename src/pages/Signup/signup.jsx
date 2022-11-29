@@ -92,7 +92,7 @@ const Signup = () => {
                 Sign-Up
               </button>
               {/* Linking signup to login page */}
-              <Link to="/login">Already registered? Login</Link>
+              <Link to="/login" className="btn-sign">Already registered? Login</Link>
             </form>
           </div>
         </div>  

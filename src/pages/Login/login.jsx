@@ -15,7 +15,7 @@ const Login = () => {
       let randomIndex = Math.floor(Math.random() * quote.length);
       let item = quote[randomIndex];
       setRandom(item);
-    }, 2000);
+    }, 5000);
   }, [quote, randomQuote]);
   return (
     <div>

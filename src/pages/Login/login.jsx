@@ -2,9 +2,9 @@ import { React, useState, useEffect } from "react";
 import "./login.css";
 import dog1 from "../../images/rottweiler1.jpg";
 import dog2 from "../../images/rottweiler2.jpg";
-import SignUp from "../Signup/signup";
 import Header from "../../components/header";
 import Quotes from "../../quotes.json";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [quote, setQuote] = useState(Quotes);
@@ -49,10 +49,10 @@ const Login = () => {
 
               <button className="btn">Login</button>
 
-              <p className="btn-log">
-                {SignUp}
-                No account? Sign-Up
-              </p>
+              
+               
+                <Link to ="/signup" className="btn-log">No account? Sign-Up</Link>
+             
             </form>
           </div>
         </div>

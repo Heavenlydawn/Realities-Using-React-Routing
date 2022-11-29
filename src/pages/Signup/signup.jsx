@@ -2,10 +2,9 @@ import React from "react";
 import "./signup.css";
 import rot1 from "../../images/rot1.jpg";
 import rot2 from "../../images/img1.jpg";
-import Login from "../Login/login";
 import Header from "../../components/header";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 // storing input values
 const Signup = () => {
@@ -88,12 +87,12 @@ const Signup = () => {
                 required
               />
 
-{/* Button section handling the onClick funcion */}
+              {/* Button section handling the onClick function */}
               <button onClick={handleSubmit} type="submit" className="btn">
                 Sign-Up
               </button>
-
-              <p className="btn-sign">{Login} Already registered? Login</p>
+              {/* Linking signup to login page */}
+              <Link to="/login">Already registered? Login</Link>
             </form>
           </div>
         </div>
